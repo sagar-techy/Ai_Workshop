@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/ 
+# Environment variables
+.env
+# Logs
+logs/
+# Temporary files
+tmp/

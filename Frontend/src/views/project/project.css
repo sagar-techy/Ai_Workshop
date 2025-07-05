@@ -1,0 +1,161 @@
+.project-main,
+.project-section {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.project-section {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+.project-section>* {
+    height: 100%;
+    flex: 1;
+    border-radius: 0.5rem;
+}
+
+/* Chat panel - home.css inspired colors */
+.project-section .chat {
+    background: #f4f7fb;
+    position: relative;
+}
+
+.project-section .chat .messages {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 80%;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    top: 0;
+    padding-bottom: 5rem;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.project-section .chat .messages::-webkit-scrollbar {
+    display: none;
+}
+
+.project-section .chat .messages .message {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    width: fit-content;
+    background: #e0e7ff;
+    color: #1e293b;
+}
+
+.project-section .chat .input-area {
+    position: absolute;
+    width: 80%;
+    background: #e0e7ff;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 0.7rem;
+    bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+}
+
+.project-section .chat .input-area input {
+    padding: 0.5rem 0.7rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #1e293b;
+}
+
+.project-section .chat .input-area button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: linear-gradient(90deg, #2e64a1 60%, #4f8edc 100%);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    font-weight: 600;
+}
+
+.project-section .chat .input-area button:hover {
+    background: linear-gradient(90deg, #1e4a7d 60%, #3a6ca8 100%);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(46, 100, 161, 0.18);
+}
+
+/* Code panel - home.css inspired colors */
+.project-section .code {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.project-section .code .language-selector {
+    padding: 10px;
+    background: #e0e7ff;
+    z-index: 10;
+}
+
+.project-section .code .language-selector select {
+    background: #f4f7fb;
+    color: #1e293b;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(46, 100, 161, 0.10);
+}
+
+.project-section .code .language-selector select:hover {
+    background: #e0e7ff;
+}
+
+.project-section .code .language-selector select option {
+    background: #f4f7fb;
+    color: #1e293b;
+}
+
+/* Monaco Editor Adjustments */
+.project-section .code .monaco-editor .margin {
+    background: #e0e7ff;
+}
+
+/* Review panel - home.css inspired colors */
+.project-section .review {
+    background: #f8fafc;
+    position: relative;
+    overflow-y: auto;
+    padding: 1rem;
+    padding-left: 3rem;
+}
+
+.project-section .review .get-review {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: linear-gradient(90deg, #2e64a1 60%, #4f8edc 100%);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(46, 100, 161, 0.10);
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.project-section .review .get-review:hover {
+    background: linear-gradient(90deg, #1e4a7d 60%, #3a6ca8 100%);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(46, 100, 161, 0.18);
+}
