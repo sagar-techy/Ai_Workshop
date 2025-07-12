@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { io as SocketIo } from "socket.io-client";
 import Editor from "@monaco-editor/react";
+import "./Project.css";
 import ReactMarkdown from "react-markdown";
-import "./project.css";
 
 const Project = () => {
   const prams = useParams();
@@ -40,7 +40,7 @@ const Project = () => {
   }
 
   useEffect(() => {
-    const io = SocketIo("https://ai-workshop-backend-t9na.onrender.com", {
+    const io = SocketIo("http://localhost:3000", {
       query: {
         project: prams.id,
       },

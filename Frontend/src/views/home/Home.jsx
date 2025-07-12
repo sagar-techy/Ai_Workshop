@@ -6,7 +6,7 @@ import "./home.css";
 const Home = () => {
   const navigate = useNavigate();
   const [projects, setProjects] = useState([]);
-    const API_BASE = 'https://ai-workshop-backend-t9na.onrender.com';
+    const API_BASE = "http://localhost:3000";
 
 
   function navigateToProject(projectId) {

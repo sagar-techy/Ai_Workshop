@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const CreateProject = () => {
   const [projectName, setProjectName] = useState("");
   const navigate = useNavigate();
-  const API_BASE = 'https://ai-workshop-backend-t9na.onrender.com';
+  const API_BASE = "http://localhost:3000";
 
   function handleSubmit(e) {
     e.preventDefault();
