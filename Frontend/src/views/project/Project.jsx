@@ -40,7 +40,7 @@ const Project = () => {
   }
 
   useEffect(() => {
-    const io = SocketIo("http://localhost:3000", {
+    const io = SocketIo("https://ai-workshop-backend-t9na.onrender.com", {
       query: {
         project: prams.id,
       },
