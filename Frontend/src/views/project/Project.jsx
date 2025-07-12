@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { io as SocketIo } from "socket.io-client";
 import Editor from "@monaco-editor/react";
 import ReactMarkdown from "react-markdown";
-import "./Project.css";
+import "./project.css";
 
 const Project = () => {
   const prams = useParams();
