@@ -6,6 +6,8 @@ import "./home.css";
 const Home = () => {
   const navigate = useNavigate();
   const [projects, setProjects] = useState([]);
+    const API_BASE = 'https://ai-workshop-backend-t9na.onrender.com';
+
 
   function navigateToProject(projectId) {
     navigate(`/project/${projectId}`);
@@ -13,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("https://ai-workshop-backend-t9na.onrender.com/projects/get-all")
+      .get(`${API_BASE}/projects/get-all`)
       .then((response) => {
         setProjects(response.data.data);
       });
