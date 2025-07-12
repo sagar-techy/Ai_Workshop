@@ -6,12 +6,13 @@ import { useNavigate } from "react-router-dom";
 const CreateProject = () => {
   const [projectName, setProjectName] = useState("");
   const navigate = useNavigate();
+  const API_BASE = 'https://ai-workshop-backend-t9na.onrender.com';
 
   function handleSubmit(e) {
     e.preventDefault();
 
     axios
-      .post("https://ai-workshop-backend-t9na.onrender.com/projects/create", {
+      .post(`${API_BASE}/projects/create`, {
         projectName,
       })
       .then(() => {
