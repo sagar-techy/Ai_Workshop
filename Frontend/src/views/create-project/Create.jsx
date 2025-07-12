@@ -11,7 +11,7 @@ const CreateProject = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3000/projects/create", {
+      .post("https://ai-workshop-backend-t9na.onrender.com/projects/create", {
         projectName,
       })
       .then(() => {
